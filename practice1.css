@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    
+}
+body {
+    background-image: url(mountain-6815304_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+/*Header section start!!*//*Header section start!!*//*Header section start!!*/
+header {
+    display: flex;
+    margin-bottom: 12.5%;
+}
+header > i {
+    visibility: hidden;
+    color: linen;
+    margin: 4vw 0 0 7vw;
+    transform: scale(2);
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    width: 60%;
+    height: 15vh;
+    margin-top: 4%;
+}
+nav > span {
+    margin: 2vh 2.5vw;
+}
+nav > span > a {
+    text-decoration: none;
+    color: linen;
+    font-size: 2.55vw;
+}
+#logo {
+    width: 20%;
+}
+#logo > img {
+    transform: scale(0.9, 0.9);
+    max-width: 70%;
+    height: 100%;
+}
+a:hover {
+    color: rgba(128, 0, 0, 0.5);
+}
+
+/*Main section start!!*//*Main section start!!*//*Main section start!!*/
+/*main used to be class!!*/
+
+#main {
+    margin: 13vh 1vw 17.5% 8vw;
+    color: linen;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.548);
+    font-size: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 60%;
+    padding-right: 0;
+}
+#main > div {
+    opacity: 0.8;
+    font-size: 120%;
+}
+#main2 {
+    margin: 13vh 1vw 17.5% 8vw;
+    color: linen;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.548);
+    font-size: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 60%;
+    padding-right: 0;
+}
+#main2 > div {
+    opacity: 0.8;
+}
+.about1 {
+    padding-right: 6%;
+    margin-left: -3%;
+}
+.about2 {
+    padding-left: 3%;
+    margin-right: -6%;
+}
+
+
+/*Footer section start!!*//*Footer section start!!*//*Footer section start!!*/
+
+footer {
+    display: flex;
+    justify-content:space-evenly ;
+    color: linen;
+    opacity: 0.8;
+    margin: 2vh 5vw 10% 5vw;
+}
+footer > div > p, footer > div > i {
+    font-weight: bold; 
+    font-size: 150%;
+}
+
+/*Media section start!!*//*Media section start!!*//*Media section start!!*/
+
+@media only screen and (max-width: 600px) {
+    header > i {visibility: visible; transform: scale(2, 2); margin-top: 5vh; margin-right: 3vw;}
+    #navBar  {opacity: 0; margin-top: 5%;}
+    #navBar > span > a {font-size: 15px;}
+    body {background-size: cover;}
+    #logo {width: 75%; height: 90%;}
+    #logo > img {width: 100%; padding-right: 0;}
+    #main {width: 85%;}
+    #main > div {font-size: 160%;}
+    #main > h1 {font-size: 320%;}
+    #main2 {width: 85%;}
+    #main2 > div {font-size: 160%;}
+    #main2 > h1 {font-size: 320%;}
+    footer {font-size: 50%; justify-content: space-between;}
+}
